@@ -10,10 +10,8 @@ import UIKit
 
 class AddClassController: UIViewController {
 
-    @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = ""
-
-
+    @IBOutlet weak var subjectTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,9 +24,7 @@ class AddClassController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dataLabel?.text = dataObject
+        
     }
-
-
 }
 

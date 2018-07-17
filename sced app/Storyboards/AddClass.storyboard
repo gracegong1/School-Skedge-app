@@ -171,6 +171,9 @@
                     <navigationItem key="navigationItem" title="Add a Class" id="hKo-Zo-u8H">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LAv-B4-FSl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="subjectTextField" destination="XqX-Vk-xjE" id="iLx-bc-rdq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
