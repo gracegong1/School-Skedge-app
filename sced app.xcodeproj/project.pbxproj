@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EC8BF220FD329C0078CF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF120FD329C0078CF9E /* AppDelegate.swift */; };
+		45EC8BF420FD329C0078CF9E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF320FD329C0078CF9E /* RootViewController.swift */; };
+		45EC8BF620FD329C0078CF9E /* AddClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF520FD329C0078CF9E /* AddClassController.swift */; };
+		45EC8BF820FD329C0078CF9E /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF720FD329C0078CF9E /* ModelController.swift */; };
+		45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BF920FD329C0078CF9E /* Main.storyboard */; };
+		45EC8BFD20FD329E0078CF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BFC20FD329E0078CF9E /* Assets.xcassets */; };
+		45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */; };
+		84750D9920FD46740067C1E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84750D9820FD46740067C1E3 /* GoogleService-Info.plist */; };
+		84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84750D9C20FE6B000067C1E3 /* AddClass.storyboard */; };
+		D4E61C25A56BD9F3420A8FA3 /* Pods_sced_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45EC8BEE20FD329C0078CF9E /* sced app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sced app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EC8BF120FD329C0078CF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45EC8BF320FD329C0078CF9E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		45EC8BF520FD329C0078CF9E /* AddClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassController.swift; sourceTree = "<group>"; };
+		45EC8BF720FD329C0078CF9E /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		45EC8BFA20FD329C0078CF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45EC8BFC20FD329E0078CF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45EC8BFF20FD329E0078CF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45EC8C0120FD329E0078CF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sced_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84750D9820FD46740067C1E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84750D9C20FE6B000067C1E3 /* AddClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddClass.storyboard; sourceTree = "<group>"; };
+		985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.debug.xcconfig"; sourceTree = "<group>"; };
+		CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.release.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EC8BEB20FD329C0078CF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E61C25A56BD9F3420A8FA3 /* Pods_sced_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EC8BE520FD329C0078CF9E = {
+			isa = PBXGroup;
+			children = (
+				45EC8BF020FD329C0078CF9E /* sced app */,
+				45EC8BEF20FD329C0078CF9E /* Products */,
+				8EEF742EDB38532CF24E53F7 /* Pods */,
+				848C43975429C85CEF0DEC49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45EC8BEF20FD329C0078CF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EC8BEE20FD329C0078CF9E /* sced app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EC8BF020FD329C0078CF9E /* sced app */ = {
+			isa = PBXGroup;
+			children = (
+				45EC8BF120FD329C0078CF9E /* AppDelegate.swift */,
+				84750D9B20FE6AC20067C1E3 /* Storyboards */,
+				84750D9E20FE9A640067C1E3 /* View Controllers */,
+				45EC8BFC20FD329E0078CF9E /* Assets.xcassets */,
+				84750D9F20FE9B040067C1E3 /* Supporting Files */,
+			);
+			path = "sced app";
+			sourceTree = "<group>";
+		};
+		84750D9B20FE6AC20067C1E3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45EC8BF920FD329C0078CF9E /* Main.storyboard */,
+				84750D9C20FE6B000067C1E3 /* AddClass.storyboard */,
+				45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84750D9E20FE9A640067C1E3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45EC8BF320FD329C0078CF9E /* RootViewController.swift */,
+				45EC8BF520FD329C0078CF9E /* AddClassController.swift */,
+				45EC8BF720FD329C0078CF9E /* ModelController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		84750D9F20FE9B040067C1E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84750D9820FD46740067C1E3 /* GoogleService-Info.plist */,
+				45EC8C0120FD329E0078CF9E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848C43975429C85CEF0DEC49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EEF742EDB38532CF24E53F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */,
+				CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EC8BED20FD329C0078CF9E /* sced app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EC8C0420FD329E0078CF9E /* Build configuration list for PBXNativeTarget "sced app" */;
+			buildPhases = (
+				947A87A8BF160C588097AD44 /* [CP] Check Pods Manifest.lock */,
+				45EC8BEA20FD329C0078CF9E /* Sources */,
+				45EC8BEB20FD329C0078CF9E /* Frameworks */,
+				45EC8BEC20FD329C0078CF9E /* Resources */,
+				9560240EDCCB7D6E6C5A044A /* [CP] Embed Pods Frameworks */,
+				7C86F1F583914064C11E88C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sced app";
+			productName = "sced app";
+			productReference = 45EC8BEE20FD329C0078CF9E /* sced app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EC8BE620FD329C0078CF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Gabbie;
+				TargetAttributes = {
+					45EC8BED20FD329C0078CF9E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 45EC8BE920FD329C0078CF9E /* Build configuration list for PBXProject "sced app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45EC8BE520FD329C0078CF9E;
+			productRefGroup = 45EC8BEF20FD329C0078CF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EC8BED20FD329C0078CF9E /* sced app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45EC8BEC20FD329C0078CF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84750D9920FD46740067C1E3 /* GoogleService-Info.plist in Resources */,
+				45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */,
+				45EC8BFD20FD329E0078CF9E /* Assets.xcassets in Resources */,
+				84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */,
+				45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C86F1F583914064C11E88C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sced app/Pods-sced app-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sced app/Pods-sced app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947A87A8BF160C588097AD44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sced app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9560240EDCCB7D6E6C5A044A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sced app/Pods-sced app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sced app/Pods-sced app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EC8BEA20FD329C0078CF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EC8BF420FD329C0078CF9E /* RootViewController.swift in Sources */,
+				45EC8BF820FD329C0078CF9E /* ModelController.swift in Sources */,
+				45EC8BF620FD329C0078CF9E /* AddClassController.swift in Sources */,
+				45EC8BF220FD329C0078CF9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45EC8BF920FD329C0078CF9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EC8BFA20FD329C0078CF9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45EC8BFF20FD329E0078CF9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45EC8C0220FD329E0078CF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45EC8C0320FD329E0078CF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EC8C0520FD329E0078CF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gabriellechang.sced-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45EC8C0620FD329E0078CF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gabriellechang.sced-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EC8BE920FD329C0078CF9E /* Build configuration list for PBXProject "sced app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EC8C0220FD329E0078CF9E /* Debug */,
+				45EC8C0320FD329E0078CF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EC8C0420FD329E0078CF9E /* Build configuration list for PBXNativeTarget "sced app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EC8C0520FD329E0078CF9E /* Debug */,
+				45EC8C0620FD329E0078CF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EC8BE620FD329C0078CF9E /* Project object */;
+}
