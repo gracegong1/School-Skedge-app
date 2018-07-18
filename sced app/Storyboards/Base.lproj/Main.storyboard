@@ -128,7 +128,13 @@
                         <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ydi-Nc-gED"/>
+                    <navigationItem key="navigationItem" id="ydi-Nc-gED">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="hG0-Jo-lNw">
+                            <connections>
+                                <segue destination="SAP-NO-cde" kind="show" identifier="settings" id="5Xi-XB-QP2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="periodTableView" destination="pT8-5I-3bb" id="bZ8-rw-MqH"/>
@@ -137,6 +143,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015.9420289855075" y="-244.56521739130437"/>
+        </scene>
+        <!--SettingsStoryboardID-->
+        <scene sceneID="Jh6-C5-DE8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsStoryboardID" id="SAP-NO-cde" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EL5-eG-m1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2550" y="-487"/>
         </scene>
         <!--AddClass-->
         <scene sceneID="ABE-g4-dmr">
