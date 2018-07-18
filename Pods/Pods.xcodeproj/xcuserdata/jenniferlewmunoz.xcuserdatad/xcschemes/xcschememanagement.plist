@@ -47,7 +47,7 @@
 		<key>Pods-sced app.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>1</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
