@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4PG-4K-1Jt">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="204" width="414" height="418"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="pnm-WM-bRK" customClass="ListPeriodTableViewCell" customModule="sced_app" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listPeriodTableViewCell" rowHeight="79" id="pnm-WM-bRK" customClass="ListPeriodTableViewCell" customModule="sced_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pnm-WM-bRK" id="hZI-7p-nut">
@@ -79,6 +79,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="703-4V-yAM" id="BsY-ul-CPT"/>
+                                    <outlet property="delegate" destination="703-4V-yAM" id="kj4-yu-XHx"/>
+                                </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hxl-bh-u0Z">
                                 <rect key="frame" x="0.0" y="622" width="414" height="70"/>
@@ -124,46 +128,41 @@
                         <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="uX7-KH-9yK"/>
+                    <navigationItem key="navigationItem" id="ydi-Nc-gED"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="periodTableView" destination="pT8-5I-3bb" id="bZ8-rw-MqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="-244"/>
+            <point key="canvasLocation" x="2015.9420289855075" y="-244.56521739130437"/>
         </scene>
-        <!--UINavigationController-8I7-9f-DQp-->
+        <!--AddClass-->
         <scene sceneID="ABE-g4-dmr">
             <objects>
-                <viewControllerPlaceholder storyboardName="addclass" referencedIdentifier="UINavigationController-8I7-9f-DQp" id="TTG-6k-OEE" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AddClass" id="TTG-6k-OEE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATn-FD-VsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690.5797101449277" y="-244.56521739130437"/>
-        </scene>
-        <!--DataViewController-->
-        <scene sceneID="fy4-9J-Dov">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DataViewController" storyboardName="addclass" referencedIdentifier="DataViewController" id="XjV-Q3-G02" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gVQ-7w-Kfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2410.144927536232" y="-243.75000000000003"/>
+            <point key="canvasLocation" x="2597.826086956522" y="-244.56521739130437"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="CQb-wY-ITq">
+        <scene sceneID="Zah-rd-ND8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="obK-0x-jaA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4PG-4K-1Jt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J6v-4B-Nil">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pii-BE-dwp">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="703-4V-yAM" kind="relationship" relationship="rootViewController" id="PQ5-sz-hfe"/>
+                        <segue destination="703-4V-yAM" kind="relationship" relationship="rootViewController" id="kMy-si-Kua"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FeW-gY-hpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68a-Qv-Zqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="-245"/>
+            <point key="canvasLocation" x="1108.6956521739132" y="-244.56521739130437"/>
         </scene>
     </scenes>
 </document>
