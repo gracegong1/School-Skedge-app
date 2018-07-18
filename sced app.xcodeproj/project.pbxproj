@@ -19,6 +19,8 @@
 		84D24B2F20FFAC44006558DD /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */; };
 		84D24B3320FFB049006558DD /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B3220FFB048006558DD /* Period.swift */; };
 		D4E61C25A56BD9F3420A8FA3 /* Pods_sced_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */; };
+		FD9D5CE820FF9CFD00D9485B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE720FF9CFD00D9485B /* Settings.storyboard */; };
+		FD9D5CEA20FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE920FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		84D24B3220FFB048006558DD /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.debug.xcconfig"; sourceTree = "<group>"; };
 		CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.release.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.release.xcconfig"; sourceTree = "<group>"; };
+		FD9D5CE720FF9CFD00D9485B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FD9D5CE920FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ddc5138c1cb701dd4bb1a356a8b39c12.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				45EC8BF920FD329C0078CF9E /* Main.storyboard */,
 				84750D9C20FE6B000067C1E3 /* AddClass.storyboard */,
 				45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */,
+				FD9D5CE720FF9CFD00D9485B /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		84750D9F20FE9B040067C1E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD9D5CE920FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg */,
 				84750DA820FF13730067C1E3 /* ListPeriodTableViewCell.swift */,
 				45EC8C0120FD329E0078CF9E /* Info.plist */,
 			);
@@ -201,9 +207,10 @@
 			files = (
 				45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */,
 				45EC8BFD20FD329E0078CF9E /* Assets.xcassets in Resources */,
+				FD9D5CE820FF9CFD00D9485B /* Settings.storyboard in Resources */,
 				84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */,
 				45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */,
-				84D24B2D20FF1CB5006558DD /* GoogleService-Info.plist in Resources */,
+				FD9D5CEA20FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74L72HJ6SW;
 				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74L72HJ6SW;
 				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
