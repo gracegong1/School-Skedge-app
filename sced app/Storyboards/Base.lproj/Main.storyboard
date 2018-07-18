@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="clB-vc-fyl">
             <objects>
-                <viewController id="703-4V-yAM" sceneMemberID="viewController">
+                <viewController id="703-4V-yAM" customClass="MainViewController" customModule="sced_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.68835456269844153" green="0.87864847715736039" blue="0.86217400698683677" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="TTG-6k-OEE" kind="show" identifier="displayPeriod" id="lje-iz-cZe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -120,9 +123,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="uX7-KH-9yK"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="TTG-6k-OEE" kind="show" id="OVZ-EW-7Ki"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
