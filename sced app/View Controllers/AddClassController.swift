@@ -11,6 +11,17 @@ import UIKit
 class AddClassController: UIViewController {
 
     @IBOutlet weak var subjectTextField: UITextField!
+    @IBOutlet weak var teacherTextField: UITextField!
+    @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var endTimeTextField: UITextField!
+    @IBOutlet weak var dayPickerView: UIPickerView!
+    @IBOutlet weak var orangeColorButton: UIButton!
+    @IBOutlet weak var mintGreenColorButton: UIButton!
+    @IBOutlet weak var skyBlueColorButton: UIButton!
+    @IBOutlet weak var mutedBlueColorButton: UIButton!
+    @IBOutlet weak var purpleColorButton: UIButton!
+    @IBOutlet weak var addClassButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +37,6 @@ class AddClassController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    
 }
 

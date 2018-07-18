@@ -172,7 +172,17 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LAv-B4-FSl"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="addClassButton" destination="1gw-JP-Swz" id="YqO-tj-BUH"/>
+                        <outlet property="dayPickerView" destination="fAy-lN-LXG" id="ljF-2T-qx3"/>
+                        <outlet property="endTimeTextField" destination="dMD-VE-yjo" id="7Td-ki-wfa"/>
+                        <outlet property="mintGreenColorButton" destination="OA3-EI-MbQ" id="Dxd-WI-5Su"/>
+                        <outlet property="mutedBlueColorButton" destination="XVd-xy-n4V" id="shi-hL-uOD"/>
+                        <outlet property="orangeColorButton" destination="BZo-Tm-tIU" id="LEo-iF-QOe"/>
+                        <outlet property="purpleColorButton" destination="eiM-iq-o0v" id="Jsy-l8-tDK"/>
+                        <outlet property="skyBlueColorButton" destination="vYx-HC-L1O" id="Q9A-Ya-5MS"/>
+                        <outlet property="startTimeTextField" destination="X9U-7e-L4j" id="vuN-m7-1Vw"/>
                         <outlet property="subjectTextField" destination="XqX-Vk-xjE" id="iLx-bc-rdq"/>
+                        <outlet property="teacherTextField" destination="YTc-72-cIr" id="H8x-vL-xWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
