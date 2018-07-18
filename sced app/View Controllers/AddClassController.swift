@@ -8,7 +8,12 @@
 
 import UIKit
 
-class AddClassController: UIViewController {
+class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
 
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var teacherTextField: UITextField!
@@ -22,10 +27,12 @@ class AddClassController: UIViewController {
     @IBOutlet weak var purpleColorButton: UIButton!
     @IBOutlet weak var addClassButton: UIButton!
     
+    let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        dayPickerView.dataSource = self
+        dayPickerView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,5 +60,13 @@ class AddClassController: UIViewController {
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
     }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+
 }
 
