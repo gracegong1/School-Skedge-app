@@ -14,6 +14,7 @@
 		45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */; };
 		84750D9920FD46740067C1E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84750D9820FD46740067C1E3 /* GoogleService-Info.plist */; };
 		84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84750D9C20FE6B000067C1E3 /* AddClass.storyboard */; };
+		84750DA120FF037D0067C1E3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84750DA020FF037D0067C1E3 /* Settings.storyboard */; };
 		D4E61C25A56BD9F3420A8FA3 /* Pods_sced_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		6F8496BA02FAB52EA2F46E62 /* Pods_sced_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sced_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84750D9820FD46740067C1E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84750D9C20FE6B000067C1E3 /* AddClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddClass.storyboard; sourceTree = "<group>"; };
+		84750DA020FF037D0067C1E3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.debug.xcconfig"; sourceTree = "<group>"; };
 		CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.release.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				45EC8BF920FD329C0078CF9E /* Main.storyboard */,
 				84750D9C20FE6B000067C1E3 /* AddClass.storyboard */,
 				45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */,
+				84750DA020FF037D0067C1E3 /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				84750D9920FD46740067C1E3 /* GoogleService-Info.plist in Resources */,
 				45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */,
 				45EC8BFD20FD329E0078CF9E /* Assets.xcassets in Resources */,
+				84750DA120FF037D0067C1E3 /* Settings.storyboard in Resources */,
 				84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */,
 				45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */,
 			);
