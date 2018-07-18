@@ -11,14 +11,27 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    var periods = [CLASSHERE]() {
+    var periods = [Period]() {
     didSet {
 
         }
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 1
-        return notes.count
+        return periods.count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListPeriodTableViewCell
+        
+        cell.subjectPeriodLabel.text = "period's title"
+        cell.timePeriodLabel.text = "period's start time"
+        cell.locationPeriodLabel.text = "period's location"
+        
+        let period = periods[indexPath.row]
+
+        
+        return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
@@ -28,12 +41,9 @@ class MainViewController: UITableViewController {
             
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
-            let note = notes[indexPath.row]
-            let destination = segue.destination as! DisplayNoteViewController
-            destination.note = note
-            
-        case "addNote":
-            print("create note bar button item tapped")
+            let period = periods[indexPath.row]
+            let destination = segue.destination as! AddClassController
+            destination.period = period
             
         default:
             print("unidentified segue identifier")

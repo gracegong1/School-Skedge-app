@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="204" width="414" height="418"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="pnm-WM-bRK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="pnm-WM-bRK" customClass="ListPeriodTableViewCell" customModule="sced_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pnm-WM-bRK" id="hZI-7p-nut">
@@ -72,6 +72,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.68835456269844153" green="0.87864847715736039" blue="0.86217400698683677" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="locationPeriodLabel" destination="hzD-JH-yjm" id="xr9-nf-Fqc"/>
+                                            <outlet property="subjectPeriodLabel" destination="iTZ-DQ-g5l" id="yqT-OE-Te2"/>
+                                            <outlet property="timePeriodLabel" destination="oud-TC-zPU" id="Xro-eu-66F"/>
                                             <segue destination="TTG-6k-OEE" kind="show" identifier="displayPeriod" id="lje-iz-cZe"/>
                                         </connections>
                                     </tableViewCell>

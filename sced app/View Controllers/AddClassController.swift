@@ -10,6 +10,8 @@ import UIKit
 
 class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
     
+    var period: Period?
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -27,23 +29,24 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     @IBOutlet weak var purpleColorButton: UIButton!
     @IBOutlet weak var addClassButton: UIButton!
     
-    let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         dayPickerView.dataSource = self
         dayPickerView.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
+    
+    let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
+    
     
     @IBAction func orangeColorButtonTapped(_ sender: Any) {
     }
