@@ -38,5 +38,20 @@ class AddClassController: UIViewController {
         
     }
     
+    @IBAction func orangeColorButtonTapped(_ sender: Any) {
+    }
+    @IBAction func mintGreeColorButtonTapped(_ sender: Any) {
+    }
+    @IBAction func skyBlueColorButtonTapped(_ sender: Any) {
+    }
+    @IBAction func mutedBlueColorButtonTapped(_ sender: Any) {
+    }
+    @IBAction func purpleColorButtonTapped(_ sender: Any) {
+    }
+    @IBAction func addClassButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+    }
 }
 

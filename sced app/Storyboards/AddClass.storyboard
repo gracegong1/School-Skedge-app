@@ -96,6 +96,9 @@
                                                 <state key="normal" title="▣">
                                                     <color key="titleColor" red="0.8862745098" green="0.52156862749999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="orangeColorButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="MvT-c9-2ca"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OA3-EI-MbQ">
                                                 <rect key="frame" x="60" y="0.0" width="30" height="42"/>
@@ -103,6 +106,9 @@
                                                 <state key="normal" title="▣">
                                                     <color key="titleColor" red="0.55294117649999996" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="mintGreeColorButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="LiE-Ju-FM3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYx-HC-L1O">
                                                 <rect key="frame" x="120" y="0.0" width="30" height="42"/>
@@ -110,6 +116,9 @@
                                                 <state key="normal" title="▣">
                                                     <color key="titleColor" red="0.32549019610000002" green="0.6588235294" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="skyBlueColorButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="nl7-Ht-TVh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVd-xy-n4V">
                                                 <rect key="frame" x="180" y="0.0" width="30" height="42"/>
@@ -117,6 +126,9 @@
                                                 <state key="normal" title="▣">
                                                     <color key="titleColor" red="0.34509803919999998" green="0.46666666670000001" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="mutedBlueColorButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Gp1-VH-gJL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-iq-o0v">
                                                 <rect key="frame" x="240" y="0.0" width="30" height="42"/>
@@ -124,6 +136,9 @@
                                                 <state key="normal" title="▣">
                                                     <color key="titleColor" red="0.55294117647058827" green="0.41614998212826798" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="purpleColorButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="v0g-7f-OV2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,6 +159,9 @@
                                 <state key="normal" title="ADD CLASS">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addClassButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="RGR-Wg-hgx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.17254901960784313" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,7 +187,11 @@
                         <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Class" id="hKo-Zo-u8H">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LAv-B4-FSl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LAv-B4-FSl">
+                            <connections>
+                                <segue destination="kbx-gc-g8O" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="4XH-rU-EEQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addClassButton" destination="1gw-JP-Swz" id="YqO-tj-BUH"/>
@@ -186,6 +208,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
+                <exit id="kbx-gc-g8O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1502.8985507246377" y="-243.75000000000003"/>
         </scene>
