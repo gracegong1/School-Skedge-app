@@ -61,10 +61,6 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     @IBAction func addClassButtonTapped(_ sender: Any) {
     }
     
-    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-        
-    }
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData.count
     }

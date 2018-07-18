@@ -161,6 +161,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addClassButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="RGR-Wg-hgx"/>
+                                    <segue destination="kbx-gc-g8O" kind="unwind" identifier="addClass" unwindAction="unwindWithSegue:" id="fbw-1y-jEr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -189,7 +190,7 @@
                     <navigationItem key="navigationItem" title="Add a Class" id="hKo-Zo-u8H">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LAv-B4-FSl">
                             <connections>
-                                <segue destination="kbx-gc-g8O" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="4XH-rU-EEQ"/>
+                                <segue destination="kbx-gc-g8O" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="hdy-UH-jHu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
