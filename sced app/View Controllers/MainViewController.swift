@@ -64,9 +64,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //            let destination = segue.destination as! AddClassController
 //            destination.period = period
             print("Transitioning to the Display Note View Controller")
+            
+        case "cancel":
+            print("Transitioning back to Main")
+            
+        case "addClass":
+            print("Transitioning back to Main")
 
         default:
             print("unidentified segue identifier")
         }
+        
+    }
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+        
     }
 }
