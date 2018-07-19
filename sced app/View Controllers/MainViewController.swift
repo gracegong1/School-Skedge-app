@@ -84,7 +84,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         case "cancel":
             print("Transitioning back to Main")
             
-        case "addClass":
+        case "confirmNewClass":
             print("Transitioning back to Main")
 
         default:
