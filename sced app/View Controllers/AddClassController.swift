@@ -69,7 +69,31 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier,
+            let destination = segue.destination as? MainViewController
+            else { return }
         
-}
+        switch identifier {
+            
+        case "save" where period != nil:
+            period?.subject = subjectTextField.text ?? ""
+            period?.teacher = teacherTextField.text ?? ""
+            
+          //  period?.modificationTime = Date()
+            
+            
+            CoreDataHelper.savePeriod()
+            
+        case "save" where period == nil:
+            let period = CoreDataHelper.newPeriod()
+            period.subject = subjectTextField.text ?? ""
+            period.teacher = teacherTextField.text ?? ""
+        //    note.modificationTime = Date()
+            
+            CoreDataHelper.savePeriod()
+        default:
+            print("unidentified segue identifier")
+        }
+    }
 
 }

@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="140" id="Up6-R8-hT6"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pT8-5I-3bb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pT8-5I-3bb">
                                 <rect key="frame" x="0.0" y="204" width="414" height="488"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -68,12 +68,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew6-zp-Q2J">
+                                                    <rect key="frame" x="234" y="37" width="62" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.68835456269844153" green="0.87864847715736039" blue="0.86217400698683677" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="locationPeriodLabel" destination="hzD-JH-yjm" id="xr9-nf-Fqc"/>
                                             <outlet property="subjectPeriodLabel" destination="iTZ-DQ-g5l" id="yqT-OE-Te2"/>
+                                            <outlet property="teacherPeriodLabel" destination="ew6-zp-Q2J" id="JXe-sT-1AL"/>
                                             <outlet property="timePeriodLabel" destination="oud-TC-zPU" id="Xro-eu-66F"/>
                                             <segue destination="TTG-6k-OEE" kind="show" identifier="displayPeriod" id="mgn-za-BZ6"/>
                                         </connections>
