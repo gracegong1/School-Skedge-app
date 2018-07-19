@@ -59,17 +59,26 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let periodToDelete = periods[indexPath.row]
+            CoreDataHelper.delete(period: periodToDelete)
+            
+            periods = CoreDataHelper.retrievePeriods()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
 
         switch identifier {
         case "displayPeriod":
             
-//            guard let indexPath = periodTableView.indexPathForSelectedRow else { return }
-//
-//            let period = periods[indexPath.row]
-//            let destination = segue.destination as! AddClassController
-//            destination.period = period
+            guard let indexPath = periodTableView.indexPathForSelectedRow else { return }
+
+                let period = periods[indexPath.row]
+                let destination = segue.destination as! AddClassController
+                    destination.period = period
             print("Transitioning to the Display Note View Controller")
             
         case "cancel":
@@ -84,6 +93,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-        
+        periods = CoreDataHelper.retrievePeriods()
     }
 }
