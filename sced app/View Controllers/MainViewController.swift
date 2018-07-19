@@ -69,6 +69,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             guard let indexPath = periodTableView.indexPathForSelectedRow else { return }
 
+//            let destVC = segue.destination as! UINavigationController
+//            let slideVC = destVC.topViewController as! ViewControllerSlide
                 let period = periods[indexPath.row]
                 let destination = segue.destination as! AddClassController
                     destination.period = period
