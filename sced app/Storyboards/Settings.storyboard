@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="nPh-0r-H33">
             <objects>
-                <viewController id="e7l-hK-Y4t" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsStoryboardID" id="e7l-hK-Y4t" customClass="SettingsViewController" customModule="sced_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DIl-A9-3ne">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="S E T T I N G S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-cs-vtJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S E T T I N G S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-cs-vtJ">
                                 <rect key="frame" x="58" y="70" width="259" height="54"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="39"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,15 +74,22 @@
                             <constraint firstItem="59K-80-8WX" firstAttribute="bottom" secondItem="Ka2-ID-meM" secondAttribute="bottom" constant="80" id="IPy-xU-50c"/>
                             <constraint firstItem="59K-80-8WX" firstAttribute="trailing" secondItem="Ka2-ID-meM" secondAttribute="trailing" constant="40" id="Ntz-gC-azU"/>
                             <constraint firstItem="L0m-cs-vtJ" firstAttribute="top" secondItem="59K-80-8WX" secondAttribute="top" constant="50" id="QOj-Ty-RjT"/>
+                            <constraint firstItem="L0m-cs-vtJ" firstAttribute="centerX" secondItem="DIl-A9-3ne" secondAttribute="centerX" id="VEX-Z1-Icj"/>
                             <constraint firstItem="Ka2-ID-meM" firstAttribute="leading" secondItem="59K-80-8WX" secondAttribute="leading" constant="40" id="Yfd-ui-2ip"/>
                             <constraint firstItem="Ka2-ID-meM" firstAttribute="top" secondItem="L0m-cs-vtJ" secondAttribute="bottom" constant="30" id="afC-xL-xQP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="59K-80-8WX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vuC-lG-Tdu"/>
+                    <connections>
+                        <outlet property="daySettingsPickerView" destination="fEx-R3-0iC" id="cNH-vo-CJP"/>
+                        <outlet property="periodSettingsPickerView" destination="MRU-nG-UWl" id="iZr-qy-Y4t"/>
+                        <outlet property="resetSettingsButton" destination="Vjl-h5-Zsn" id="YtL-Hj-mib"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeP-rp-ghh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="119.1904047976012"/>
+            <point key="canvasLocation" x="996" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>

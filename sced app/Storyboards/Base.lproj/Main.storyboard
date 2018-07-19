@@ -37,7 +37,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pT8-5I-3bb">
-                                <rect key="frame" x="0.0" y="204" width="414" height="418"/>
+                                <rect key="frame" x="0.0" y="204" width="414" height="488"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listPeriodTableViewCell" rowHeight="120" id="pnm-WM-bRK" customClass="ListPeriodTableViewCell" customModule="sced_app" customModuleProvider="target">
@@ -84,51 +84,27 @@
                                     <outlet property="delegate" destination="703-4V-yAM" id="kj4-yu-XHx"/>
                                 </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hxl-bh-u0Z">
-                                <rect key="frame" x="0.0" y="622" width="414" height="70"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWg-e0-Kat">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="70"/>
-                                        <color key="backgroundColor" red="0.20392156862745098" green="0.27450980392156865" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Week">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-hD-N38">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="70"/>
-                                        <color key="backgroundColor" red="0.34509803921568627" green="0.46666666666666667" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Today">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-fj-eIy">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="70"/>
-                                        <color key="backgroundColor" red="0.20392156862745098" green="0.27450980392156865" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Full">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="bottom" secondItem="pT8-5I-3bb" secondAttribute="bottom" constant="70" id="7E2-JQ-v2t"/>
-                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="trailing" secondItem="Hxl-bh-u0Z" secondAttribute="trailing" id="CE1-kG-Hau"/>
+                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="bottom" secondItem="pT8-5I-3bb" secondAttribute="bottom" id="7E2-JQ-v2t"/>
                             <constraint firstItem="iAZ-4m-2z3" firstAttribute="trailing" secondItem="qun-4e-9ZC" secondAttribute="trailing" id="Ux4-zW-mHH"/>
                             <constraint firstItem="pT8-5I-3bb" firstAttribute="top" secondItem="qun-4e-9ZC" secondAttribute="bottom" id="dCV-Yx-AiT"/>
-                            <constraint firstItem="Hxl-bh-u0Z" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="fDW-cU-UsA"/>
-                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="bottom" secondItem="Hxl-bh-u0Z" secondAttribute="bottom" id="ggE-dh-5MM"/>
                             <constraint firstItem="pT8-5I-3bb" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="gjr-22-sY7"/>
                             <constraint firstItem="qun-4e-9ZC" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="rwG-Gr-eBb"/>
-                            <constraint firstItem="Hxl-bh-u0Z" firstAttribute="top" secondItem="pT8-5I-3bb" secondAttribute="bottom" id="uMZ-Fb-brI"/>
                             <constraint firstItem="qun-4e-9ZC" firstAttribute="top" secondItem="iAZ-4m-2z3" secondAttribute="top" id="vUK-2O-KXJ"/>
                             <constraint firstItem="iAZ-4m-2z3" firstAttribute="trailing" secondItem="pT8-5I-3bb" secondAttribute="trailing" id="ywl-d8-HBl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ydi-Nc-gED"/>
+                    <navigationItem key="navigationItem" id="ydi-Nc-gED">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="hG0-Jo-lNw">
+                            <connections>
+                                <segue destination="SAP-NO-cde" kind="show" identifier="settings" id="5Xi-XB-QP2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="periodTableView" destination="pT8-5I-3bb" id="bZ8-rw-MqH"/>
@@ -137,6 +113,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015.9420289855075" y="-244.56521739130437"/>
+        </scene>
+        <!--SettingsStoryboardID-->
+        <scene sceneID="Jh6-C5-DE8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsStoryboardID" id="SAP-NO-cde" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EL5-eG-m1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2550" y="-487"/>
         </scene>
         <!--AddClass-->
         <scene sceneID="ABE-g4-dmr">

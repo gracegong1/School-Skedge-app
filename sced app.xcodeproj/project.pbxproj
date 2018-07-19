@@ -21,6 +21,7 @@
 		84750DA920FF13730067C1E3 /* ListPeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84750DA820FF13730067C1E3 /* ListPeriodTableViewCell.swift */; };
 		84D24B2F20FFAC44006558DD /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */; };
 		84D24B3620FFB2BA006558DD /* SkedgeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B3420FFB2BA006558DD /* SkedgeModel.xcdatamodeld */; };
+		84D24B3A2101025D006558DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B3921010259006558DD /* SettingsViewController.swift */; };
 		9156F1837EF59F0C6BABDB6B /* libPods-sced app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89F873C6CF16B887BCFB60B /* libPods-sced app.a */; };
 		FD9D5CE820FF9CFD00D9485B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE720FF9CFD00D9485B /* Settings.storyboard */; };
 		FD9D5CEA20FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE920FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg */; };
@@ -44,6 +45,7 @@
 		84D24B2C20FF1CB5006558DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		84D24B3520FFB2BA006558DD /* SkedgeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkedgeModel.xcdatamodel; sourceTree = "<group>"; };
+		84D24B3921010259006558DD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "sced app/View Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.debug.xcconfig"; sourceTree = "<group>"; };
 		A89F873C6CF16B887BCFB60B /* libPods-sced app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sced app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.release.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				84750DA220FF09C90067C1E3 /* MainViewController.swift */,
 				45EC8BF520FD329C0078CF9E /* AddClassController.swift */,
+				84D24B3921010259006558DD /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				84D24B2F20FFAC44006558DD /* CoreDataHelper.swift in Sources */,
 				84750DA320FF09C90067C1E3 /* MainViewController.swift in Sources */,
 				4554436420FFF6B000C339F2 /* NotificationService.swift in Sources */,
+				84D24B3A2101025D006558DD /* SettingsViewController.swift in Sources */,
 				45EC8BF620FD329C0078CF9E /* AddClassController.swift in Sources */,
 				45EC8BF220FD329C0078CF9E /* AppDelegate.swift in Sources */,
 				84D24B3620FFB2BA006558DD /* SkedgeModel.xcdatamodeld in Sources */,
