@@ -73,6 +73,11 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate {
         fatalError("not implemented")
     }
     
+    func promptUserForAuthorization(failureHandler: @escaping (Bool, Error?) -> Void = { _,_ in }) {
+        let center =  UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge], completionHandler: failureHandler)
+    }
+    
     // MARK: - IBACTIONS
     
     // MARK: - LIFE CYCLE

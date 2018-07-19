@@ -10,6 +10,7 @@
 		4554436420FFF6B000C339F2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554436320FFF6B000C339F2 /* NotificationService.swift */; };
 		4554436620FFF87500C339F2 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554436520FFF87500C339F2 /* NotificationDelegate.swift */; };
 		45544368210001A300C339F2 /* NotificationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544367210001A300C339F2 /* NotificationStack.swift */; };
+		4554436A210106EC00C339F2 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544369210106EC00C339F2 /* Date+convertToString.swift */; };
 		45EC8BF220FD329C0078CF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF120FD329C0078CF9E /* AppDelegate.swift */; };
 		45EC8BF620FD329C0078CF9E /* AddClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC8BF520FD329C0078CF9E /* AddClassController.swift */; };
 		45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BF920FD329C0078CF9E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		4554436320FFF6B000C339F2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		4554436520FFF87500C339F2 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		45544367210001A300C339F2 /* NotificationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStack.swift; sourceTree = "<group>"; };
+		45544369210106EC00C339F2 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		45EC8BEE20FD329C0078CF9E /* sced app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sced app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EC8BF120FD329C0078CF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45EC8BF520FD329C0078CF9E /* AddClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */,
+				45544369210106EC00C339F2 /* Date+convertToString.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				84D24B3620FFB2BA006558DD /* SkedgeModel.xcdatamodeld in Sources */,
 				84750DA920FF13730067C1E3 /* ListPeriodTableViewCell.swift in Sources */,
 				4554436620FFF87500C339F2 /* NotificationDelegate.swift in Sources */,
+				4554436A210106EC00C339F2 /* Date+convertToString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

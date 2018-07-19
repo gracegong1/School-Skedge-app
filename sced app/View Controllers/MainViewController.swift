@@ -30,27 +30,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //handle result of request failure
         }
         
-        /** 5 minutes from now */
-        let startOfClassDate = Date(timeIntervalSinceNow: 60*5)
-        
-        let content = UNMutableNotificationContent()
-        content.title = "SCED"
-        content.subtitle = "Chemistry Class"
-        content.body = "⏰: 9-10AM\n📍: Room 249"
-        content.sound = UNNotificationSound.default()
-        
-        var identifier = ":/"
-        var dateComponent = DateComponents()
-        dateComponent.hour = 4
-        dateComponent.minute = 37 //startOfClassMinutes - 20
-        
-        var trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
-        
-        
-//        notifications.scheduleNotification(content: content, trigger: trigger, notificationIdentifier: identifier)
-        
-        
-        
         periods = CoreDataHelper.retrievePeriods()
     }
     

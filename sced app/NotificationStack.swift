@@ -11,11 +11,23 @@ import UserNotifications
 
 class NotificationStack: NotificationService {
     
-    func scheduleNotification(with className: String, time: Date, location: String) {
+    func scheduleNotificationFor(className: String, startOfClass time: Date, location: String) {
         
+        /** 20 mintues from the time given in the function */
+        let twentyMinutesBeforeClassTime = time - 60*20
         
+        let content = UNMutableNotificationContent()
+        content.title = className
+        let formattedTime = time.convertToString(dateStyle: DateFormatter.Style.none, timeStyle: DateFormatter.Style.short)
+        content.body = "⏰ \(formattedTime) 📍 \(location)"
+        content.sound = UNNotificationSound.default()
         
-//        self.scheduleNotification(content: <#T##UNNotificationContent#>, trigger: <#T##UNNotificationTrigger!#>, notificationIdentifier: <#T##String#>)
+        let identifier = ":/"
+        let dateComponent = Calendar.current.dateComponents([.hour, .minute, .second], from: twentyMinutesBeforeClassTime)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        self.scheduleNotification(content: content, trigger: trigger, notificationIdentifier: identifier)
     }
     
 }
