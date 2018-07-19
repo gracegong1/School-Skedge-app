@@ -22,14 +22,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //asks user for permission for notifications
-        let center =  UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { (result, error) in
-            //handle result of request failure
-        }
-        
         periods = CoreDataHelper.retrievePeriods()
     }
     
