@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8I7-9f-DQp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8I7-9f-DQp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -218,7 +218,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addClassButtonTapped:" destination="S4R-Ja-viH" eventType="touchUpInside" id="RGR-Wg-hgx"/>
-                                    <segue destination="kbx-gc-g8O" kind="unwind" identifier="addClass" unwindAction="unwindWithSegue:" id="fbw-1y-jEr"/>
+                                    <segue destination="kbx-gc-g8O" kind="unwind" identifier="confirmNewClass" unwindAction="unwindWithSegue:" id="fbw-1y-jEr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,7 +245,11 @@
                         <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Class" id="BSW-b9-KFg">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dxb-Bx-X5E"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dxb-Bx-X5E">
+                            <connections>
+                                <segue destination="kbx-gc-g8O" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="ugG-nu-Vaw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addClassButton" destination="1gw-JP-Swz" id="YqO-tj-BUH"/>

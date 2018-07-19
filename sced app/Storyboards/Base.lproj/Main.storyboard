@@ -61,17 +61,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room 240" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzD-JH-yjm">
-                                                    <rect key="frame" x="125" y="38" width="75" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew6-zp-Q2J">
                                                     <rect key="frame" x="234" y="37" width="62" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room 240" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzD-JH-yjm">
+                                                    <rect key="frame" x="140" y="37" width="75" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -110,6 +110,11 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="hG0-Jo-lNw">
                             <connections>
                                 <segue destination="SAP-NO-cde" kind="show" identifier="settings" id="5Xi-XB-QP2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XoI-ay-WPc">
+                            <connections>
+                                <segue destination="TTG-6k-OEE" kind="show" identifier="addNewClass" id="p4Y-hQ-gCk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -157,4 +162,7 @@
             <point key="canvasLocation" x="1108.6956521739132" y="-244.56521739130437"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p4Y-hQ-gCk"/>
+    </inferredMetricsTieBreakers>
 </document>

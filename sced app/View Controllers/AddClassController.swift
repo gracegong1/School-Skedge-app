@@ -42,7 +42,15 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        if let period = period {
+            subjectTextField.text = period.subject
+            teacherTextField.text = period.teacher
+            locationTextField.text = period.location
+        } else {
+            subjectTextField.text = ""
+            teacherTextField.text = ""
+            locationTextField.text
+        }
     }
     
     let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
@@ -75,7 +83,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
         
         switch identifier {
             
-        case "save" where period != nil:
+        case "confirmNewClass" where period != nil:
             period?.subject = subjectTextField.text ?? ""
             period?.teacher = teacherTextField.text ?? ""
             
@@ -84,7 +92,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
             
             CoreDataHelper.savePeriod()
             
-        case "save" where period == nil:
+        case "confirmNewClass" where period == nil:
             let period = CoreDataHelper.newPeriod()
             period.subject = subjectTextField.text ?? ""
             period.teacher = teacherTextField.text ?? ""
@@ -95,5 +103,4 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
             print("unidentified segue identifier")
         }
     }
-
 }
