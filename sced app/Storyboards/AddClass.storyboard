@@ -62,7 +62,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Time" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMD-VE-yjo">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMD-VE-yjo">
                                                         <rect key="frame" x="140" y="0.0" width="90" height="30"/>
                                                         <color key="tintColor" red="0.88627450980392153" green="0.52156862745098043" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -250,7 +250,7 @@
                     <connections>
                         <outlet property="addClassButton" destination="1gw-JP-Swz" id="YqO-tj-BUH"/>
                         <outlet property="dayPickerView" destination="fAy-lN-LXG" id="ljF-2T-qx3"/>
-                        <outlet property="endTimeTextField" destination="dMD-VE-yjo" id="7Td-ki-wfa"/>
+                        <outlet property="locationTextField" destination="dMD-VE-yjo" id="L8n-wb-fLR"/>
                         <outlet property="mintGreenColorButton" destination="OA3-EI-MbQ" id="Dxd-WI-5Su"/>
                         <outlet property="mutedBlueColorButton" destination="XVd-xy-n4V" id="shi-hL-uOD"/>
                         <outlet property="orangeColorButton" destination="BZo-Tm-tIU" id="LEo-iF-QOe"/>
