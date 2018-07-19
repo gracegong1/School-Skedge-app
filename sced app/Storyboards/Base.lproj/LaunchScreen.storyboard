@@ -44,11 +44,15 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MAa-zm-kPU">
+                                            <rect key="frame" x="178" y="395.5" width="20" height="20"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="q8s-Wn-90m" firstAttribute="leading" secondItem="eAb-9m-GvJ" secondAttribute="leading" constant="72" id="R9F-fd-BrN"/>
-                                        <constraint firstAttribute="trailing" secondItem="q8s-Wn-90m" secondAttribute="trailing" constant="72" id="srb-vY-PfX"/>
-                                        <constraint firstItem="q8s-Wn-90m" firstAttribute="top" secondItem="eAb-9m-GvJ" secondAttribute="top" constant="230" id="vFL-9H-crX"/>
+                                        <constraint firstItem="q8s-Wn-90m" firstAttribute="top" secondItem="eAb-9m-GvJ" secondAttribute="top" constant="230" id="1Y3-1m-NaW"/>
+                                        <constraint firstItem="MAa-zm-kPU" firstAttribute="centerX" secondItem="eAb-9m-GvJ" secondAttribute="centerX" id="8kr-Hf-9eu"/>
+                                        <constraint firstItem="MAa-zm-kPU" firstAttribute="top" secondItem="q8s-Wn-90m" secondAttribute="bottom" constant="20" id="MZc-vk-Vbc"/>
+                                        <constraint firstItem="q8s-Wn-90m" firstAttribute="centerX" secondItem="eAb-9m-GvJ" secondAttribute="centerX" id="X4t-VX-7Sr"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
