@@ -11,14 +11,18 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    // Setting View Controllers
     @IBOutlet weak var daySettingsPickerView: UIPickerView!
     @IBOutlet weak var periodSettingsPickerView: UIPickerView!
     @IBOutlet weak var resetSettingsButton: UIButton!
    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         daySettingsPickerView.dataSource = self
         daySettingsPickerView.delegate = self
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,6 +36,8 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     let daySettingsPickerData = ["1", "2", "3", "4"]
+    
+
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
