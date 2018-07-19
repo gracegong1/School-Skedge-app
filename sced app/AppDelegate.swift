@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Failed to authentiate")
             }
         }
-        
+        //TODO: eventually change this !!!!!!!!!!
         return true
     }
 
