@@ -49,7 +49,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
         } else {
             subjectTextField.text = ""
             teacherTextField.text = ""
-            locationTextField.text
+            locationTextField.text = ""
         }
     }
     
@@ -86,6 +86,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
         case "confirmNewClass" where period != nil:
             period?.subject = subjectTextField.text ?? ""
             period?.teacher = teacherTextField.text ?? ""
+            period?.location = locationTextField.text ?? ""
             
           //  period?.modificationTime = Date()
             
@@ -96,6 +97,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
             let period = CoreDataHelper.newPeriod()
             period.subject = subjectTextField.text ?? ""
             period.teacher = teacherTextField.text ?? ""
+            period.location = locationTextField.text ?? ""
         //    note.modificationTime = Date()
             
             CoreDataHelper.savePeriod()

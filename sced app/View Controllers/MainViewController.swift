@@ -44,9 +44,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let period = periods[indexPath.row]
         
         cell.subjectPeriodLabel.text = period.subject
-        cell.timePeriodLabel.text = period.startTime
         cell.teacherPeriodLabel.text = period.teacher
         cell.locationPeriodLabel.text = period.location
+        
+     //   cell.noteModificationTimeLabel.text = note.modificationTime?.convertToString() ?? "unknown"
 
         return cell
     }
