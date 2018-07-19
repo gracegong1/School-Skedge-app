@@ -12,12 +12,12 @@
 		45EC8BFB20FD329C0078CF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BF920FD329C0078CF9E /* Main.storyboard */; };
 		45EC8BFD20FD329E0078CF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BFC20FD329E0078CF9E /* Assets.xcassets */; };
 		45EC8C0020FD329E0078CF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC8BFE20FD329E0078CF9E /* LaunchScreen.storyboard */; };
-		61DEDBDA20FFF69100ED48B9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEDBD920FFF69100ED48B9 /* SettingsViewController.swift */; };
 		84750D9D20FE6B000067C1E3 /* AddClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84750D9C20FE6B000067C1E3 /* AddClass.storyboard */; };
 		84750DA320FF09C90067C1E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84750DA220FF09C90067C1E3 /* MainViewController.swift */; };
 		84750DA920FF13730067C1E3 /* ListPeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84750DA820FF13730067C1E3 /* ListPeriodTableViewCell.swift */; };
 		84D24B2F20FFAC44006558DD /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */; };
 		84D24B3620FFB2BA006558DD /* SkedgeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B3420FFB2BA006558DD /* SkedgeModel.xcdatamodeld */; };
+		84D24B3A2101025D006558DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D24B3921010259006558DD /* SettingsViewController.swift */; };
 		9156F1837EF59F0C6BABDB6B /* libPods-sced app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89F873C6CF16B887BCFB60B /* libPods-sced app.a */; };
 		FD9D5CE820FF9CFD00D9485B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE720FF9CFD00D9485B /* Settings.storyboard */; };
 		FD9D5CEA20FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9D5CE920FFA80600D9485B /* ddc5138c1cb701dd4bb1a356a8b39c12.jpg */; };
@@ -31,13 +31,13 @@
 		45EC8BFC20FD329E0078CF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45EC8BFF20FD329E0078CF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45EC8C0120FD329E0078CF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61DEDBD920FFF69100ED48B9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "/Users/Guile/Documents/GitHub/School-Skedge-app/sced app/View Controllers/SettingsViewController.swift"; sourceTree = "<absolute>"; };
 		84750D9C20FE6B000067C1E3 /* AddClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddClass.storyboard; sourceTree = "<group>"; };
 		84750DA220FF09C90067C1E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84750DA820FF13730067C1E3 /* ListPeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeriodTableViewCell.swift; sourceTree = "<group>"; };
 		84D24B2C20FF1CB5006558DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84D24B2E20FFAC44006558DD /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		84D24B3520FFB2BA006558DD /* SkedgeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkedgeModel.xcdatamodel; sourceTree = "<group>"; };
+		84D24B3921010259006558DD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "sced app/View Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		985EAF12478C4C75F476C932 /* Pods-sced app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.debug.xcconfig"; sourceTree = "<group>"; };
 		A89F873C6CF16B887BCFB60B /* libPods-sced app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sced app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB515C4B4A1DE50AFB616323 /* Pods-sced app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sced app.release.xcconfig"; path = "Pods/Target Support Files/Pods-sced app/Pods-sced app.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			children = (
 				84750DA220FF09C90067C1E3 /* MainViewController.swift */,
 				45EC8BF520FD329C0078CF9E /* AddClassController.swift */,
-				61DEDBD920FFF69100ED48B9 /* SettingsViewController.swift */,
+				84D24B3921010259006558DD /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 			files = (
 				84D24B2F20FFAC44006558DD /* CoreDataHelper.swift in Sources */,
 				84750DA320FF09C90067C1E3 /* MainViewController.swift in Sources */,
-				61DEDBDA20FFF69100ED48B9 /* SettingsViewController.swift in Sources */,
+				84D24B3A2101025D006558DD /* SettingsViewController.swift in Sources */,
 				45EC8BF620FD329C0078CF9E /* AddClassController.swift in Sources */,
 				45EC8BF220FD329C0078CF9E /* AppDelegate.swift in Sources */,
 				84D24B3620FFB2BA006558DD /* SkedgeModel.xcdatamodeld in Sources */,
@@ -325,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -379,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -396,7 +396,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74L72HJ6SW;
 				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,7 +415,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74L72HJ6SW;
 				INFOPLIST_FILE = "$(SRCROOT)/sced app/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="S E T T I N G S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-cs-vtJ">
-                                <rect key="frame" x="58" y="114" width="259" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S E T T I N G S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-cs-vtJ">
+                                <rect key="frame" x="58" y="70" width="259" height="54"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="39"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-ID-meM">
-                                <rect key="frame" x="40" y="198" width="295" height="389"/>
+                                <rect key="frame" x="40" y="154" width="295" height="433"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-h5-Zsn">
                                         <rect key="frame" x="26" y="351" width="242" height="36"/>
@@ -74,6 +74,7 @@
                             <constraint firstItem="59K-80-8WX" firstAttribute="bottom" secondItem="Ka2-ID-meM" secondAttribute="bottom" constant="80" id="IPy-xU-50c"/>
                             <constraint firstItem="59K-80-8WX" firstAttribute="trailing" secondItem="Ka2-ID-meM" secondAttribute="trailing" constant="40" id="Ntz-gC-azU"/>
                             <constraint firstItem="L0m-cs-vtJ" firstAttribute="top" secondItem="59K-80-8WX" secondAttribute="top" constant="50" id="QOj-Ty-RjT"/>
+                            <constraint firstItem="L0m-cs-vtJ" firstAttribute="centerX" secondItem="DIl-A9-3ne" secondAttribute="centerX" id="VEX-Z1-Icj"/>
                             <constraint firstItem="Ka2-ID-meM" firstAttribute="leading" secondItem="59K-80-8WX" secondAttribute="leading" constant="40" id="Yfd-ui-2ip"/>
                             <constraint firstItem="Ka2-ID-meM" firstAttribute="top" secondItem="L0m-cs-vtJ" secondAttribute="bottom" constant="30" id="afC-xL-xQP"/>
                         </constraints>
@@ -89,24 +90,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeP-rp-ghh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="996" y="119.1904047976012"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="dAh-nY-Rj9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aq7-h3-idg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W6l-PL-5qK">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="e7l-hK-Y4t" kind="relationship" relationship="rootViewController" id="CAc-NG-2Rt"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YY2-YB-wQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>

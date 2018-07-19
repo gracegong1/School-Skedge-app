@@ -46,7 +46,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return daySettingsPickerData.count
     }
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return daySettingsPickerData[row]
     }
     
