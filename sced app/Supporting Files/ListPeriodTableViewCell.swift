@@ -16,4 +16,6 @@ class ListPeriodTableViewCell: UITableViewCell {
     @IBOutlet weak var timePeriodLabel: UILabel!
     
     @IBOutlet weak var locationPeriodLabel: UILabel!
+    
+    @IBOutlet weak var teacherPeriodLabel: UILabel!
 }

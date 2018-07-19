@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import UserNotifications
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -21,6 +22,14 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //asks user for permission for notifications
+        let center =  UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (result, error) in
+            //handle result of request failure
+        }
+        
         periods = CoreDataHelper.retrievePeriods()
     }
     
@@ -34,20 +43,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 1
-//        return periods.count
-        return 2
+        
+        return periods.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listPeriodTableViewCell", for: indexPath) as! ListPeriodTableViewCell
         
-        cell.subjectPeriodLabel.text = "period's title"
-        cell.timePeriodLabel.text = "period's start time"
-        cell.locationPeriodLabel.text = "period's location"
+        let period = periods[indexPath.row]
         
-//        let period = periods[indexPath.row]
+        cell.subjectPeriodLabel.text = period.subject
+        cell.timePeriodLabel.text = period.startTime
+        cell.teacherPeriodLabel.text = period.teacher
+        cell.locationPeriodLabel.text = period.location
 
-        
         return cell
     }
     
