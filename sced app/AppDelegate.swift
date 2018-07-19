@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 
 @UIApplicationMain
@@ -18,7 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
+//        print(Date().convertToString(dateStyle: .none, timeStyle: .full))
+//        print(Date().convertToString(dateStyle: .none, timeStyle: .long))
+//        print(Date().convertToString(dateStyle: .none, timeStyle: .medium))
+//        print(Date().convertToString(dateStyle: .none, timeStyle: .short))
+        
+        let notifications = NotificationStack()
+        
+        //authroize for notifications
+        notifications.promptUserForAuthorization { (granted, error) in            
+            if granted {
+                notifications.scheduleNotificationFor(className: "Chem", startOfClass: Date(timeIntervalSinceNow: 10), location: "here")
+            } else {
+                print("Failed to authentiate")
+            }
+        }
+        //TODO: eventually change this !!!!!!!!!!
         return true
     }
 
