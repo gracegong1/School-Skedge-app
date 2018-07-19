@@ -67,6 +67,9 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
 }
 
+}
