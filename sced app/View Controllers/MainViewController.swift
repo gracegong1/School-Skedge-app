@@ -47,7 +47,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.teacherPeriodLabel.text = period.teacher
         cell.locationPeriodLabel.text = period.location
         
-        cell.timePeriodLabel.text = period.startTime?.convertToString(dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium) ?? "unknown"
+     //   cell.timePeriodLabel.text = period.startTime?.convertToString(dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium) ?? "unknown"
 
         return cell
     }
