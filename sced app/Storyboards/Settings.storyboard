@@ -110,6 +110,7 @@
                         <outlet property="daySettingsPickerView" destination="fEx-R3-0iC" id="cNH-vo-CJP"/>
                         <outlet property="periodSettingsPickerView" destination="MRU-nG-UWl" id="iZr-qy-Y4t"/>
                         <outlet property="resetSettingsButton" destination="Vjl-h5-Zsn" id="YtL-Hj-mib"/>
+                        <outlet property="settingsView" destination="Ka2-ID-meM" id="CZx-Ku-5FQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeP-rp-ghh" userLabel="First Responder" sceneMemberID="firstResponder"/>
