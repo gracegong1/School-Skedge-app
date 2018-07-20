@@ -22,6 +22,8 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
         super.viewDidLoad()
         daySettingsPickerView.dataSource = self
         daySettingsPickerView.delegate = self
+        periodSettingsPickerView.dataSource = self
+        periodSettingsPickerView.delegate = self
 
     }
     
@@ -36,6 +38,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     let daySettingsPickerData = ["1", "2", "3", "4"]
+    let periodSettingsPickerData = ["Gabbie", "Grace", "Jennifer", "Jessica", "Jose", "Igo"]
     
 
     
@@ -45,9 +48,15 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return daySettingsPickerData.count
+        return periodSettingsPickerData.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return daySettingsPickerData[row]
+        return periodSettingsPickerData[row]
     }
+    // 2nd picker view
     
+    func numberOfComponentsTwo(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
 }
