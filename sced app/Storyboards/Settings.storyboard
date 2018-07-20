@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +23,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-ID-meM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-ID-meM">
                                 <rect key="frame" x="15" y="113.5" width="345" height="523.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X3p-rt-V8L">
@@ -62,6 +61,10 @@
                                                 <state key="normal" title="R E S E T">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="resetButtonTapped:" destination="e7l-hK-Y4t" eventType="touchUpInside" id="ftG-BT-phO"/>
+                                                    <segue destination="HJb-DA-qvA" kind="unwind" identifier="reset" unwindAction="unwindWithSegue:" id="TbF-Hu-u68"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -114,6 +117,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeP-rp-ghh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HJb-DA-qvA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="996" y="119.1904047976012"/>
         </scene>

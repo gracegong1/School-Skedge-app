@@ -60,4 +60,13 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func numberOfComponentsTwo(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
+    @IBAction func resetButtonTapped(_ sender: Any) {
+//        let period = periods[indexPath.row]
+//
+//        cell.subjectPeriodLabel.text = period.subject
+//        cell.teacherPeriodLabel.text = period.teacher
+//        cell.locationPeriodLabel.text = period.location
+    }
+    
 }
