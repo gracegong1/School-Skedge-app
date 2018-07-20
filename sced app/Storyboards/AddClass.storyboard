@@ -21,68 +21,42 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bZ-FU-wDY">
                                 <rect key="frame" x="15" y="88" width="345" height="134.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zof-jC-f5p">
-                                        <rect key="frame" x="55" y="27.5" width="235" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-x8-cjW">
+                                        <rect key="frame" x="15" y="14" width="315" height="110"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HuL-Yq-u65">
-                                                <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqX-Vk-xjE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                                        <color key="tintColor" red="0.88627450980392153" green="0.52156862745098043" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="90" id="LJx-YB-tFZ"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teacher" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTc-72-cIr">
-                                                        <rect key="frame" x="140" y="0.0" width="90" height="30"/>
-                                                        <color key="tintColor" red="0.8862745098" green="0.52156862749999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="90" id="sQR-WT-xgj"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="AmR-qV-KD8">
-                                                <rect key="frame" x="0.0" y="50" width="230" height="30"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Time" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9U-7e-L4j">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                                        <color key="tintColor" red="0.8862745098" green="0.52156862749999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="90" id="PbD-zx-AJu"/>
-                                                        </constraints>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMD-VE-yjo">
-                                                        <rect key="frame" x="140" y="0.0" width="90" height="30"/>
-                                                        <color key="tintColor" red="0.88627450980392153" green="0.52156862745098043" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="90" id="QHI-KM-yZe"/>
-                                                        </constraints>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqX-Vk-xjE">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                                <color key="tintColor" red="0.88627450980392153" green="0.52156862745098043" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMD-VE-yjo">
+                                                <rect key="frame" x="0.0" y="40" width="315" height="30"/>
+                                                <color key="tintColor" red="0.88627450980392153" green="0.52156862745098043" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teacher Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lka-RX-RwS">
+                                                <rect key="frame" x="0.0" y="80" width="315" height="30"/>
+                                                <color key="tintColor" red="0.8862745098" green="0.52156862749999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XqX-Vk-xjE" secondAttribute="trailing" id="4jN-LT-hwG"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lka-RX-RwS" secondAttribute="trailing" id="XLm-nO-hgy"/>
+                                            <constraint firstAttribute="trailing" secondItem="dMD-VE-yjo" secondAttribute="trailing" id="bmD-7r-Kas"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.34509803919999998" green="0.46666666670000001" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="zof-jC-f5p" secondAttribute="bottom" constant="27" id="Mgm-7I-6ah"/>
-                                    <constraint firstItem="zof-jC-f5p" firstAttribute="top" secondItem="3bZ-FU-wDY" secondAttribute="top" constant="27" id="aLx-FU-v59"/>
-                                    <constraint firstItem="zof-jC-f5p" firstAttribute="leading" secondItem="3bZ-FU-wDY" secondAttribute="leading" constant="55" id="iBd-Yz-dFO"/>
-                                    <constraint firstAttribute="trailing" secondItem="zof-jC-f5p" secondAttribute="trailing" constant="55" id="lBc-tm-qUj"/>
+                                    <constraint firstAttribute="trailing" secondItem="UGh-x8-cjW" secondAttribute="trailing" constant="15" id="NsF-df-dNa"/>
+                                    <constraint firstItem="UGh-x8-cjW" firstAttribute="leading" secondItem="3bZ-FU-wDY" secondAttribute="leading" constant="15" id="Vf3-nG-mv3"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -127,6 +101,32 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jU-8H-JL3">
                                 <rect key="frame" x="15" y="405" width="345" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fCz-kl-nvp">
+                                        <rect key="frame" x="15" y="15" width="320" height="113.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What time does the class start?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qJ-PQ-fR2">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ij9-Km-trv">
+                                                <rect key="frame" x="0.0" y="23.5" width="320" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="qBO-U6-bNV"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="553800993.64278901">
+                                                    <!--2018-07-20 17:36:33 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0qJ-PQ-fR2" secondAttribute="trailing" constant="20" id="Q4a-d8-udv"/>
+                                            <constraint firstItem="0qJ-PQ-fR2" firstAttribute="leading" secondItem="fCz-kl-nvp" secondAttribute="leading" constant="20" id="eXu-jj-zRA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -183,9 +183,7 @@
                         <outlet property="addClassButton" destination="1gw-JP-Swz" id="YqO-tj-BUH"/>
                         <outlet property="dayPickerView" destination="fAy-lN-LXG" id="ljF-2T-qx3"/>
                         <outlet property="locationTextField" destination="dMD-VE-yjo" id="L8n-wb-fLR"/>
-                        <outlet property="startTimeTextField" destination="X9U-7e-L4j" id="vuN-m7-1Vw"/>
                         <outlet property="subjectTextField" destination="XqX-Vk-xjE" id="iLx-bc-rdq"/>
-                        <outlet property="teacherTextField" destination="YTc-72-cIr" id="H8x-vL-xWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
