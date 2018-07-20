@@ -47,7 +47,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.teacherPeriodLabel.text = period.teacher
         cell.locationPeriodLabel.text = period.location
         
-     //   cell.noteModificationTimeLabel.text = note.modificationTime?.convertToString() ?? "unknown"
+        cell.timePeriodLabel.text = period.startTime?.convertToString(dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium) ?? "unknown"
 
         return cell
     }
@@ -69,9 +69,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             guard let indexPath = periodTableView.indexPathForSelectedRow else { return }
 
-                let period = periods[indexPath.row]
-                let destination = segue.destination as! AddClassController
+            let period = periods[indexPath.row]
+            let initDestination = segue.destination as! UINavigationController
+            let destination = initDestination.topViewController as! AddClassController
                     destination.period = period
+            
             print("Transitioning to the Display Note View Controller")
             
         case "cancel":

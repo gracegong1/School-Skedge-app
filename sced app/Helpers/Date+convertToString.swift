@@ -13,3 +13,8 @@ extension Date {
         return DateFormatter.localizedString(from: self, dateStyle: dateStyle, timeStyle: timeStyle)
     }
 }
+extension NSDate {
+    func convertToString() -> String {
+        return DateFormatter.localizedString(from: (self as Date), dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
+    }
+}
