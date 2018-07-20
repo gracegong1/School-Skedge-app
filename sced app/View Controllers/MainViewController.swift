@@ -69,17 +69,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             guard let indexPath = periodTableView.indexPathForSelectedRow else { return }
 
-<<<<<<< HEAD
+
             let period = periods[indexPath.row]
             let initDestination = segue.destination as! UINavigationController
             let destination = initDestination.topViewController as! AddClassController
-=======
-//            let destVC = segue.destination as! UINavigationController
-//            let slideVC = destVC.topViewController as! ViewControllerSlide
-                let period = periods[indexPath.row]
-                let destination = segue.destination as! AddClassController
->>>>>>> develop
-                    destination.period = period
+
+            destination.period = period
             
             print("Transitioning to the Display Note View Controller")
             

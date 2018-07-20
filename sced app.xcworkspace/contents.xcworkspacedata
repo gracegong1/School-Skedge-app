@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/Guile/Documents/GitHub/School-Skedge-app/sced app/View Controllers/SettingsViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:sced app.xcodeproj">
    </FileRef>
    <FileRef

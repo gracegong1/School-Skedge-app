@@ -13,17 +13,17 @@ class NotificationStack: NotificationService {
     
     func scheduleNotificationFor(className: String, startOfClass time: Date, location: String) {
         
-        /** 20 mintues from the time given in the function */
-        let twentyMinutesBeforeClassTime = time - 60*20
+        /** 10 mintues from the time given in the function */
+        let tenMinutesBeforeClassTime = time - 60*10
         
         let content = UNMutableNotificationContent()
         content.title = className
         let formattedTime = time.convertToString(dateStyle: DateFormatter.Style.none, timeStyle: DateFormatter.Style.short)
-        content.body = "⏰ \(formattedTime) 📍 \(location)"
+        content.body = "⏰: \(formattedTime)\n📍: \(location)"
         content.sound = UNNotificationSound.default()
         
         let identifier = ":/"
-        let dateComponent = Calendar.current.dateComponents([.hour, .minute, .second], from: twentyMinutesBeforeClassTime)
+        let dateComponent = Calendar.current.dateComponents([.hour, .minute, .second], from: tenMinutesBeforeClassTime)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
         
