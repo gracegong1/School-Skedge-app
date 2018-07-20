@@ -108,7 +108,7 @@
                     <navigationItem key="navigationItem" id="ydi-Nc-gED">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="hG0-Jo-lNw">
                             <connections>
-                                <segue destination="SAP-NO-cde" kind="show" identifier="settings" id="5Xi-XB-QP2"/>
+                                <action selector="settingsButtonTapped:" destination="703-4V-yAM" id="ewK-Ls-STd"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XoI-ay-WPc">
@@ -120,6 +120,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="periodTableView" destination="pT8-5I-3bb" id="bZ8-rw-MqH"/>
+                        <segue destination="SAP-NO-cde" kind="show" identifier="settings2" id="FPo-tr-h4o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>

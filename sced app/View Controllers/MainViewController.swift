@@ -19,6 +19,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         periodTableView.reloadData()
         }
     }
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "settings2", sender: nil)
+    }
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +39,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.periods = CoreDataHelper.retrievePeriods()
+        self.periodTableView.reloadData()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,6 +93,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         case "confirmNewClass":
             print("Transitioning back to Main")
+            
+        case "settings2":
+            let settingVC = segue.destination as! SettingsViewController
+            settingVC.periods = self.periods
 
         default:
             print("unidentified segue identifier")
@@ -93,5 +106,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         periods = CoreDataHelper.retrievePeriods()
     }
+    
+    
     
 }

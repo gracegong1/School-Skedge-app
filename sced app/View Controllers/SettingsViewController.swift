@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var daySettingsPickerView: UIPickerView!
     @IBOutlet weak var periodSettingsPickerView: UIPickerView!
     @IBOutlet weak var resetSettingsButton: UIButton!
-   
+    var periods = [Period]()
     
     
     override func viewDidLoad() {
@@ -62,11 +62,9 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     @IBAction func resetButtonTapped(_ sender: Any) {
-//        let period = periods[indexPath.row]
-//
-//        cell.subjectPeriodLabel.text = period.subject
-//        cell.teacherPeriodLabel.text = period.teacher
-//        cell.locationPeriodLabel.text = period.location
+        periods.forEach { (period) in
+            CoreDataHelper.delete(period: period)
+        }
     }
     
 }
