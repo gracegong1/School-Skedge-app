@@ -17,12 +17,13 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     }
     
 
-    @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var teacherTextField: UITextField!
-    @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var scedPickerField: UIPickerView!
     @IBOutlet weak var dayPickerView: UIPickerView!
     @IBOutlet weak var addClassButton: UIButton!
+    @IBOutlet weak var timePickerField: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
         }
     }
     
-    let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
+    let pickerData = ["A","B","C","D","E","F","G"]
     
     
     @IBAction func addClassButtonTapped(_ sender: Any) {
