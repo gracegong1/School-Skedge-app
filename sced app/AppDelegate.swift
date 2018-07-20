@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print(Date().convertToString(dateStyle: .none, timeStyle: .medium))
 //        print(Date().convertToString(dateStyle: .none, timeStyle: .short))
         
+        //make the launch screen stand out for a longer amount of time
+        Thread.sleep(forTimeInterval: 2.0)
+        
         let notifications = NotificationStack()
         
         //authroize for notifications

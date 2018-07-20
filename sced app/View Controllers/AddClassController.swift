@@ -19,14 +19,9 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
 
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var teacherTextField: UITextField!
-//    @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var startTimeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var dayPickerView: UIPickerView!
-    @IBOutlet weak var orangeColorButton: UIButton!
-    @IBOutlet weak var mintGreenColorButton: UIButton!
-    @IBOutlet weak var skyBlueColorButton: UIButton!
-    @IBOutlet weak var mutedBlueColorButton: UIButton!
-    @IBOutlet weak var purpleColorButton: UIButton!
     @IBOutlet weak var addClassButton: UIButton!
     
     override func viewDidLoad() {
@@ -56,16 +51,6 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     let pickerData = ["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"]
     
     
-    @IBAction func orangeColorButtonTapped(_ sender: Any) {
-    }
-    @IBAction func mintGreeColorButtonTapped(_ sender: Any) {
-    }
-    @IBAction func skyBlueColorButtonTapped(_ sender: Any) {
-    }
-    @IBAction func mutedBlueColorButtonTapped(_ sender: Any) {
-    }
-    @IBAction func purpleColorButtonTapped(_ sender: Any) {
-    }
     @IBAction func addClassButtonTapped(_ sender: Any) {
     }
     
