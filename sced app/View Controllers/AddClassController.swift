@@ -19,7 +19,7 @@ class AddClassController: UIViewController, UIPickerViewDataSource,UIPickerViewD
 
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var teacherTextField: UITextField!
-    @IBOutlet weak var startTimeTextField: UITextField!
+//    @IBOutlet weak var startTimeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var dayPickerView: UIPickerView!
     @IBOutlet weak var orangeColorButton: UIButton!
