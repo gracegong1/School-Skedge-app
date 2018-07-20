@@ -46,11 +46,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.subjectPeriodLabel.text = period.subject
         cell.teacherPeriodLabel.text = period.teacher
         cell.locationPeriodLabel.text = period.location
-<<<<<<< HEAD
-=======
         
      //   cell.timePeriodLabel.text = period.startTime?.convertToString(dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium) ?? "unknown"
->>>>>>> Gabbie-Branch
 
         return cell
     }

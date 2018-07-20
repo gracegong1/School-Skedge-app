@@ -11,6 +11,7 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var settingsView: UIView!
     // Setting View Controllers
     @IBOutlet weak var daySettingsPickerView: UIPickerView!
     @IBOutlet weak var periodSettingsPickerView: UIPickerView!
@@ -48,11 +49,11 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return daySettingsPickerData.count
-        return periodSettingsPickerData.count
+      //  return periodSettingsPickerData.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return daySettingsPickerData[row]
-        return periodSettingsPickerData[row]
+    //    return periodSettingsPickerData[row]
     }
     // 2nd picker view
     
